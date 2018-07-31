@@ -16,12 +16,14 @@ window.social = {
 },// llave registrar
 
 ingreso: (email2,password2) => {
+
   firebase.auth().signInWithEmailAndPassword(email2, password2)
   .then(function() {
   window.social.observador()
   })
   .catch(function(error) {
     // Handle Errors here.
+    console.log(error)
     var errorCode = error.code;
     var errorMessage = error.message;
   });
