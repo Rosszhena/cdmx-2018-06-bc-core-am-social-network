@@ -65,12 +65,12 @@ main {
   font-size: 1.2rem;
   width: 100%;
   padding: 1rem;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
 }
 .comunidad {
   display: none;
-  background-color: #f4f4f4;
-  border: 1px solid #eee;
+  /* background-color: #f4f4f4; */
+  /* border: 1px solid #eee; */
 }
 
 @media screen and (min-width: 768px) {
@@ -96,7 +96,7 @@ main {
 .new {
   width: 100%;
   padding: 1rem;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   text-align: right;
   margin-bottom: 1rem;
 }
@@ -124,7 +124,7 @@ main {
 }
 .post {
   width: 100%;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   border: 1px solid #ccc;
   margin-bottom: 1rem;
   padding: 1rem;
