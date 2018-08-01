@@ -12,11 +12,10 @@ const contenido = document.getElementById('contenido');
 
 btnRegistrar.addEventListener("click", event =>{
   window.social.registrar(email.value,password.value);
-    //window.social.observador();
-    document.querySelector('.modal-registro').classList.add('active');
-    document.querySelector('.loginGeneral').style.display = 'none';
+  //window.social.observador();
+  
   }
-);
+  );
 
 btnIngreso.addEventListener("click", event =>{
   window.social.ingreso(email2.value,password2.value);
