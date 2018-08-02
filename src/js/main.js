@@ -6,7 +6,7 @@ const password2 = document.getElementById('password2');
 const btnIngreso = document.getElementById('ingreso');
 const btnRegistrar = document.getElementById('registrar');
 const btnGoogle = document.getElementById('btn-google');
-
+const btnFacebook = document.getElementById('btn-facebook');
 const contenido = document.getElementById('contenido');
 
 
@@ -28,6 +28,14 @@ btnGoogle.addEventListener("click", event => {
   //window.social.observador();
 }
 );
+
+btnFacebook.addEventListener("click", event => {
+  window.social.facebookSignIn();
+  //window.social.observador();
+}
+);
+
+
 
 function abrirRegistro() {
   document.querySelector('.loginGeneral').style.display = 'none';

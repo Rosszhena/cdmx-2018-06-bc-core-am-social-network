@@ -33,14 +33,33 @@ ingreso: (email2,password2) => {
 googleSignIn: () => {
   provider = new firebase.auth.GoogleAuthProvider()
   firebase.auth().signInWithPopup(provider).then(function(result){
-  //  window.social.guardaDatos(result)
+
    console.log(result)
      location.href ="views/muro.html";
         }).catch(function(err) {
         console.log(err)
         console.log("Failed to do")
       });
-}, //llave ingresoGoogle
+}, 
+facebookSignIn: () => {
+  var provider = new firebase.auth.FacebookAuthProvider();
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    location.href ="views/muro.html";
+    var token = result.credential.accessToken;
+   
+    var user = result.user;
+    console.log(user)
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+},//llave ingresoGoogle
 /*
 guardaDatos: (user) => {
   var usuario = {
